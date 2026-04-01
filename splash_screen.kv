@@ -1,4 +1,5 @@
 <SplashScreen>:
+    orientation: "vertical"
     canvas.before:
         Color:
             rgba: (30/255,30/255,30/255,1)
@@ -7,7 +8,14 @@
             size: self.size
     Image:
         source: "assets/logo.png"
+        size_hint: 1, 0.9
+    LazyDev:
+        size_hint: 1, 0.1
 
 <LazyDev@AnchorLayout>:
+    anchor_y: "bottom"
+    anchor_x: "center"
     Label:
         text: "Developed By Lazy Devs"
+        font_name: "fonts/ExpletusSans-Regular.ttf"
+        font_size: "16sp"

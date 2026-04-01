@@ -1,5 +1,5 @@
 [project]
-name = "Ebutuoy Downloader"
+name = "EbutuoyDownloader"
 version = "1.0.0"
 description = "A youtube downloader app designed to run on every platform. This app can download video and playslist in .mp3 and .mp4 format"
 requires-python = ">=3.9"
