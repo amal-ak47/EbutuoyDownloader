@@ -1,14 +1,45 @@
 <SplashScreen>:
-    orientation: "vertical"
+    orientation: 'vertical'
     canvas.before:
         Color:
-            rgba: (30/255,30/255,30/255,1)
+            rgba: (30/255, 30/255, 30/255, 1)
         Rectangle:
             pos: self.pos
             size: self.size
-    Image:
-        source: "assets/logo.png"
-        size_hint: 1, 0.9
+
+    Widget:
+        size_hint: 1, 0.3
+
+    AnchorLayout:
+        anchor_x: 'center'
+        anchor_y: 'center'
+        size_hint: 1, 0.4
+        BoxLayout:
+            id: logo_row
+            orientation: 'horizontal'
+            size_hint: None, None
+            height: 120
+            width: '400sp'
+            spacing: '-15sp'
+
+            Image:
+                source: "assets/logo.png"
+                size_hint: None, None
+                size: '120sp', '120sp'
+
+            Label:
+                id: pop_text
+                font_name: "fonts/HanaleiFill-Regular.ttf"
+                text: "Ebutuoy Downloader"
+                font_size: '28sp'
+                opacity: 0
+                size_hint: None, None
+                height: '120sp'
+                width: 0
+
+    Widget:
+        size_hint: 1, 0.2
+
     LazyDev:
         size_hint: 1, 0.1
 

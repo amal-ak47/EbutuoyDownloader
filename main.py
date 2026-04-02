@@ -8,5 +8,7 @@ class EbutuoyDownloaderApp(App):
     def build(self):
         return SplashScreen()
 
+    def on_start(self):
+        self.root.animate_text()
 if __name__ == "__main__":
     EbutuoyDownloaderApp().run()
