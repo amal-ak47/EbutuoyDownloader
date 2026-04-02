@@ -1,0 +1,32 @@
+<MainScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        canvas.before:
+            Color:
+                rgba: (30/255, 30/255, 30/255, 1)
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        LogoElement:
+            size_hint: 1, 0.2
+
+<LogoElement@AnchorLayout>:
+    anchor_x: 'center'
+    anchor_y: 'top'
+    BoxLayout:
+        size_hint: None, None
+        height: 120
+        spacing: '-10sp'
+        width: '200sp'
+        Image:
+            source: "assets/logo.png"
+            size_hint: None, None
+            size: '100sp', '100sp'
+        Label:
+            id: pop_text
+            font_name: "fonts/HanaleiFill-Regular.ttf"
+            text: "Ebutuoy Downloader"
+            font_size: '20sp'
+            size_hint: None, None
+            height: '100sp'
+            width: '100sp'
